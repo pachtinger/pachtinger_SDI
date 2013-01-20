@@ -153,7 +153,3 @@ console.log ("--Each weapons ammunition boxes contain a different amount of ammu
 console.log ("-----This means that our total amount of ammunition for all weapons is: " + totalAmmo + " Rounds!" + "\n");
 
 
-
-
-
-
