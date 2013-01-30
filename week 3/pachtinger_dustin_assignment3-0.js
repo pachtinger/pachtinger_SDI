@@ -1,6 +1,6 @@
 // Dustin M. Pachtinger
 // SDI 1301
-// Project/Activity One
+// Project/Activity 3
 // I am learning how to create my first JavaScript!
 
 // My variables
@@ -154,8 +154,123 @@ console.log ("-----This means that our total amount of ammunition for all weapon
 
 
 
+// For new assignment
 
 
 
+//confirm box
+
+var x=window.confirm("Should we count the ammunition?")
+if (x)
+
+console.log ("Let's get started then!")
+else
+
+console.log ("Alrighty then, moving along")
 
 
+
+//input box
+
+var y=window.prompt("Please Enter Your Name")
+console.log (y)
+
+
+//website call
+
+var stay=confirm("Click okay to go to yahoo")
+if (stay) //(!stay) will make it not go to yahoo.
+window.location="http://www.yahoo.com"
+
+//should open new window to google
+
+   var winFB;
+        var winTWt;
+        var counterFB = 0;
+        var counterTWT = 0;
+        var timerFB;
+        function openFB() {
+
+            if (counterFB == 0) {
+                winFB = window.open("http://www.google.com");
+                counterFB = 1;
+            }
+            if (counterFB > 0) {
+                alert(winFB);
+                if (winFB == null) {
+                    counterFB = 0;
+                    clearTimeout(timerFB);
+                    alert("Window Closed");
+                }
+            }
+          timerFB= setTimeout("openFB()", 1000);
+        }
+
+
+// Function Returns a Value
+var a = 5;
+var b = 2;
+function myFunction(a,b)
+{
+return a*b;
+}
+
+// A loop of some kind
+function myFunction()
+{
+var x;
+var txt="";
+var person={fname:"John",lname:"Doe",age:25};
+
+for (x in person)
+{
+txt=txt + person[x];
+}
+
+document.getElementById("demo").innerHTML=txt;
+}
+
+// Does a loop with a break/skip in code
+
+function myFunction()
+{
+var x="",i=0;
+for (i=0;i<10;i++)
+  {
+  if (i==3)
+    {
+    continue;
+    }
+  x=x + "The number is " + i + "<br>";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+//Prompt box function
+
+function myFunction()
+{
+var x;
+var r=confirm("Press a button!");
+if (r==true)
+  {
+  x="You pressed OK!";
+  }
+else
+  {
+  x="You pressed Cancel!";
+  }
+document.getElementById("demo").innerHTML=x;
+}
+
+
+
+//reload page
+
+function confirmRefresh() {
+var okToRefresh = confirm("Do you really want to refresh the page?");
+if (okToRefresh)
+	{
+			setTimeout("location.reload(true);",1500);
+	}
+}
